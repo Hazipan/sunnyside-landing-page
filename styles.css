@@ -23,7 +23,7 @@ header {
 
 .menuIcon {
     position: relative;
-    left: 200px;
+    left: 175px;
     visibility: hidden;
 }
 
@@ -308,7 +308,7 @@ header {
 
 @media (max-width: 750px) {
     #projects {
-        padding: 75px 50px;
+        padding: 75px 20px;
     }
 
     .testimonials {
@@ -362,7 +362,7 @@ footer {
 
 .footerNav a {
     color: hsl(168, 34%, 41%);
-    padding: 0 25px;
+    padding: 0 15px;
 }
 
 .socialLinks {
@@ -387,6 +387,10 @@ footer {
 }
 
 @media(max-width: 750px) {
+    #footer {
+        padding: 50px 0 0 0
+    }
+
     .footerNav a {
         visibility: visible;
         font-size: 14px
