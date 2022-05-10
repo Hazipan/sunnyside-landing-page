@@ -1,13 +1,61 @@
-/* Reset */
-html {
+/* Reset and global styles*/
+body {
     display: block;
     margin: 0;
     padding: 0;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
 }
 
-/* Global Styles */
-body {
+h1, h2{
+    font-family: 'Fraunces', serif;
+}
 
+/* Header styles */
+header {
+    background-image: url("./images/desktop/image-header.jpg");
+    background-size: 100%;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.headerNavLink {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+#contactLink {
+    background-color: white;
+    color: hsl(212, 27%, 19%);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.head {
+    text-align: center;
+    color: white;
+    font-size: 42px;
+    letter-spacing: 10px;
+    font-weight: 900;
+    align-self: center;
+    margin-top: 75px;
+}
+
+.arrowIcon {
+    width: 40px;
+    align-self: center;
+    margin-top: 60px;
 }
 
 .attribution { 

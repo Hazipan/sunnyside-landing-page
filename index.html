@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" type="text/sass" href="./styles.sass">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,17 +17,20 @@
 
 <body>
   <header>
-    <img src="./images/logo.svg" alt="Sunnyside logo">
-    <nav class="headerNav">
-      <a href="#about" class="headerNavLink">About</a>
-      <a href="#services" class="headerNavLink">Service</a>
-      <a href="#projects" class="headerNavLink">Projects</a>
-      <a href="#" class="headerNavLink">Contact</a>
-    </nav>
+    <div class="navbar">
+      <img src="./images/logo.svg" alt="Sunnyside logo" class="headerLogo">
+      <nav class="headerNav">
+        <a href="#about" class="headerNavLink">About</a>
+        <a href="#services" class="headerNavLink">Service</a>
+        <a href="#projects" class="headerNavLink">Projects</a>
+        <a href="#" class="headerNavLink" id="contactLink">CONTACT</a>
+      </nav>
+    </div>
+    <h1 class="head">WE ARE CREATIVES</h1>
+    <img class="arrowIcon" src="./images/icon-arrow-down.svg" alt="">
   </header>
 
   <main>
-    <h1 class="head">We are creatives</h1>
     <section id="about">
       <div class="textBoxNoImage">
         <h2 class="boldText">Transform your brand</h2>
@@ -57,7 +60,7 @@
     </section>
 
     <section id="projects">
-      <h2 class="testimonialHead">Client testimonials</h2>
+      <h2 class="testimonialHead">CLIENT TESTIMONIALS</h2>
       <div class="testimonials">
         <div class="testomonial">
           <p class="regularText">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
