@@ -1,4 +1,4 @@
-/* Reset and global styles*/
+/* Reset and global styles */
 body {
     display: block;
     margin: 0;
@@ -7,11 +7,11 @@ body {
     font-size: 18px;
 }
 
-h1, h2{
+h1, h2 {
     font-family: 'Fraunces', serif;
 }
 
-/* Header styles */
+/* ----------Header---------- */
 header {
     background-image: url("./images/desktop/image-header.jpg");
     background-size: 100%;
@@ -58,6 +58,58 @@ header {
     margin-top: 60px;
 }
 
+/* ----------About---------- */
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 525px 525px;
+}
+
+.textBoxNoImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 90px;
+}
+
+.boldText {
+    font-size: 44px;
+    color:hsl(212, 27%, 19%);
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.regularText {
+    color: hsl(210, 4%, 67%);
+    margin-bottom: 40px;
+}
+
+.learnMore {
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+    background-image: linear-gradient(hsl(51, 100%, 49%) 0 0);
+    background-position: center 15px; /*Adjust the background-position to move the line*/
+    background-size: 100% 7px; /*Adjust the background size to control length and height*/
+    background-repeat: no-repeat;
+    width: 135px;
+    text-align: center;
+}
+
+#transformImage {
+    background-image: url("./images/desktop/image-transform.jpg");
+    background-position: center;
+    background-size: auto;
+}
+
+#standOutImage {
+    background-image: url("./images/desktop/image-stand-out.jpg");
+    background-position: center;
+    background-size: auto;
+}
+
+/* ----------Footer---------- */
 .attribution { 
     font-size: 11px; 
     text-align: center; 
