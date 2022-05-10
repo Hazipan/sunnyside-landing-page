@@ -156,6 +156,65 @@ header {
     text-align: center;
 }
 
+/* ----------Projects---------- */
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 75px;
+}
+
+.testimonialHead {
+    color:hsl(210, 4%, 67%);
+    letter-spacing: 5px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 70px;
+    font-weight: 900;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headshotWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.headshot {
+    border-radius: 50%;
+    width: 50px;
+    margin-bottom: 50px;
+}
+
+.testimonialText {
+    text-align: center;
+    color: hsl(232, 10%, 55%);
+}
+
+.name {
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+}
+
+.title {
+    text-align: center;
+    font-size: 14px;
+    color: hsl(210, 4%, 67%);
+}
+
 /* ----------Footer---------- */
 .attribution { 
     font-size: 11px; 
