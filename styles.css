@@ -362,7 +362,7 @@ footer {
 
 .footerNav a {
     color: hsl(168, 34%, 41%);
-    padding: 0 15px;
+    padding: 0 5px;
 }
 
 .socialLinks {
@@ -394,5 +394,9 @@ footer {
     .footerNav a {
         visibility: visible;
         font-size: 14px
+    }
+
+    .attribution {
+        font-size: 8px;
     }
 }
