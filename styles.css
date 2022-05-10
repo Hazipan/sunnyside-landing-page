@@ -109,6 +109,53 @@ header {
     background-size: auto;
 }
 
+/* ----------Services---------- */
+#services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 525px;
+}
+
+.textBoxWithImage {
+    background-position: center;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 25px 125px;
+}
+
+#graphicDesign {
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+}
+
+#graphicHead {
+    color: hsl(167, 40%, 24%);
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+#graphicText {
+    color: hsl(167, 40%, 24%);
+    text-align: center;
+}
+
+#photography {
+    background-image: url("./images/desktop/image-photography.jpg");
+}
+
+#photographyHead {
+    color: hsl(198, 62%, 26%);
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+#photographyText {
+    color: hsl(198, 62%, 26%);
+    text-align: center;
+}
+
 /* ----------Footer---------- */
 .attribution { 
     font-size: 11px; 
