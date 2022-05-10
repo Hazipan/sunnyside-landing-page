@@ -1,4 +1,4 @@
-/* Reset and global styles */
+/* --------------------Reset and global styles-------------------- */
 body {
     display: block;
     margin: 0;
@@ -11,14 +11,20 @@ h1, h2 {
     font-family: 'Fraunces', serif;
 }
 
-/* ----------Header---------- */
+/* --------------------Header-------------------- */
 header {
     background-image: url("./images/desktop/image-header.jpg");
-    background-size: 100%;
-    background-position: center;
+    background-size: 100% 100%;
+    background-position: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.menuIcon {
+    position: relative;
+    left: 200px;
+    visibility: hidden;
 }
 
 .navbar {
@@ -58,7 +64,22 @@ header {
     margin-top: 60px;
 }
 
-/* ----------About---------- */
+@media(max-width: 750px) {
+    header {
+        background-image: url("./images/mobile/image-header.jpg");
+    }
+
+    .headerNavLink {
+        visibility: hidden;
+        font-size: 8px;
+    }
+
+    .menuIcon {
+        visibility: visible;
+    }
+}
+
+/* --------------------About-------------------- */
 #about {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -69,6 +90,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 90px;
 }
 
@@ -90,11 +112,12 @@ header {
     font-weight: 900;
     color: hsl(212, 27%, 19%);
     background-image: linear-gradient(hsl(51, 100%, 49%) 0 0);
-    background-position: center 15px; /*Adjust the background-position to move the line*/
-    background-size: 100% 7px; /*Adjust the background size to control length and height*/
+    background-position: center 15px;
+    background-size: 100% 7px;
     background-repeat: no-repeat;
     width: 135px;
     text-align: center;
+    align-self: flex-start;
 }
 
 #transformImage {
@@ -109,7 +132,55 @@ header {
     background-size: auto;
 }
 
-/* ----------Services---------- */
+@media(max-width: 750px) {
+    #about {
+        grid-template-areas:
+            "area1"
+            "area2"
+            "area3"
+            "area4";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 425px);
+    }
+
+    #transformImage {
+        background-image: url("./images/mobile/image-transform.jpg");
+        grid-area: area1;
+    }
+
+    #transformText {
+        grid-area: area2;
+    }
+
+    #standOutImage {
+        background-image: url("./images/mobile/image-stand-out.jpg");
+        grid-area: area3;
+    }
+
+    #standOutText {
+        grid-area: area4;
+    }
+
+    .textBoxNoImage {
+        padding: 45px;
+    }
+
+    .boldText {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .regularText {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .learnMore {
+        align-self: center;
+    }
+}
+
+/* --------------------Services-------------------- */
 #services {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -156,7 +227,18 @@ header {
     text-align: center;
 }
 
-/* ----------Projects---------- */
+@media (max-width: 750px) {
+    #services {
+        grid-template-columns: 1fr;
+        grid-template-rows: 525px 525px;
+    }
+
+    .textBoxWithImage {
+        padding: 25px 50px;
+    }
+}
+
+/* --------------------Projects-------------------- */
 #projects {
     display: flex;
     flex-direction: column;
@@ -224,7 +306,43 @@ header {
     width: 25vw;
 }
 
-/* ----------Footer---------- */
+@media (max-width: 750px) {
+    #projects {
+        padding: 75px 50px;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .testimonialText {
+        margin: 25px;
+    }
+
+    .name {
+        margin: 0 0 25px 0;
+    }
+
+    .title {
+        margin: 0 0 25px 0;
+    }
+
+    .headshot {
+        margin-bottom: 0;
+    }
+
+    .imageGallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imageGallery img {
+        width: 50vw;
+        height: 50vw;
+    }
+} 
+
+/* --------------------Footer-------------------- */
 footer {
     background-color: hsl(168, 45%, 70%);
     display: flex;
@@ -236,6 +354,10 @@ footer {
 
 .footerLogo {
     margin-bottom: 30px;
+}
+
+.footerNav {
+    margin-bottom: 50px;
 }
 
 .footerNav a {
@@ -251,7 +373,7 @@ footer {
 }
 
 .socialLinks a img {
-    padding: 25px;
+    padding: 15px;
 }
 
 .attribution { 
@@ -262,4 +384,11 @@ footer {
     
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media(max-width: 750px) {
+    .footerNav a {
+        visibility: visible;
+        font-size: 14px
+    }
 }
