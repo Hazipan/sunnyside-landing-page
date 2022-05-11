@@ -362,7 +362,7 @@ footer {
 
 .footerNav a {
     color: hsl(168, 34%, 41%);
-    padding: 0 5px;
+    padding: 0 5px 0 0;
 }
 
 .socialLinks {
