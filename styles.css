@@ -72,7 +72,7 @@ header {
 
     .headerNavLink {
         visibility: hidden;
-        font-size: 8px;
+        font-size: 1px;
     }
 
     .menuIcon {
