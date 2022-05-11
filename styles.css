@@ -22,8 +22,9 @@ header {
 }
 
 .menuIcon {
-    position: relative;
-    left: 175px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
     visibility: hidden;
 }
 
