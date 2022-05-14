@@ -22,10 +22,7 @@ header {
 }
 
 .menuIcon {
-    position: absolute;
-    right: 25px;
-    top: 25px;
-    visibility: hidden;
+    display: none;
 }
 
 .navbar {
@@ -35,6 +32,13 @@ header {
     padding: 30px;
 }
 
+.headerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .headerNavLink {
     color: white;
     text-decoration: none;
@@ -42,11 +46,24 @@ header {
     font-size: 14px;
 }
 
+.headerNavLink:hover {
+    color: rgb(214, 214, 214);
+}
+
 #contactLink {
     background-color: white;
     color: hsl(212, 27%, 19%);
     border-radius: 20px;
     padding: 10px;
+}
+
+#contactLink:hover {
+    background-color: rgba(255, 255, 255, 0.45);
+    text-decoration: none;
+}
+
+.mobileMenuTip {
+    display: none;
 }
 
 .head {
@@ -70,13 +87,63 @@ header {
         background-image: url("./images/mobile/image-header.jpg");
     }
 
+    .navbar {
+        display: block;
+    }
+
+    .headerNav {
+        display: none;
+    }
+
     .headerNavLink {
-        visibility: hidden;
-        font-size: 1px;
+        color: hsl(210, 4%, 67%);
+        font-size: 18px;
+    }
+
+    #contactLink {
+        background-color: hsl(51, 100%, 49%);
+        padding: 15px;
+        border-radius: 25px;
+    }
+
+    #contactLink:hover {
+        background-color: hsl(7, 99%, 70%);
     }
 
     .menuIcon {
-        visibility: visible;
+        display: inline;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .showTip {
+        display: inline;
+        position: absolute;
+        background: repeating-linear-gradient(135deg, transparent, transparent 15px, white 15px, white 30px);
+        width: 20px;
+        height: 20px;
+        top: 60px;
+        right: 40px;
+    }
+
+    .showMenu {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        background-color: white;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        height: 200px;
+        width: 300px;
+        top: 80px;
+        right: 20px;
+    }
+
+    .head {
+        font-size: 32px;
     }
 }
 
@@ -119,6 +186,10 @@ header {
     width: 135px;
     text-align: center;
     align-self: flex-start;
+}
+
+.learnMore:hover {
+    background-image: linear-gradient(hsl(7, 99%, 70%) 0 0);
 }
 
 #transformImage {
@@ -366,6 +437,10 @@ footer {
     padding: 0 5px 0 0;
 }
 
+.footerNav a:hover {
+    color: white;
+}
+
 .socialLinks {
     display: flex;
     align-items: center;
@@ -384,7 +459,13 @@ footer {
 }
     
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: rgb(82, 82, 82);
+    text-decoration: underline rgb(82, 82, 82);
+}
+
+.attribution a:hover {
+    color: white;
+    text-decoration: underline white;
 }
 
 @media(max-width: 750px) {

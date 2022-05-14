@@ -19,14 +19,41 @@
   <header>
     <div class="navbar">
       <img src="./images/logo.svg" alt="Sunnyside logo" class="headerLogo">
-      <nav class="headerNav">
-        <img src="./images/icon-hamburger.svg" alt="Menu" class="menuIcon">
-        <a href="#about" class="headerNavLink">About</a>
-        <a href="#services" class="headerNavLink">Service</a>
-        <a href="#projects" class="headerNavLink">Projects</a>
-        <a href="#" class="headerNavLink" id="contactLink">CONTACT</a>
+      <img src="./images/icon-hamburger.svg" alt="Menu" class="menuIcon" onclick="menuToggle()">
+      <nav class="headerNav" id="headerNav">
+        <a href="#about" class="headerNavLink" onclick="hideMenu()">About</a><br>
+        <a href="#services" class="headerNavLink" onclick="hideMenu()">Service</a><br>
+        <a href="#projects" class="headerNavLink" onclick="hideMenu()">Projects</a><br>
+        <a href="#" class="headerNavLink" id="contactLink" onclick="hideMenu()">CONTACT</a>
       </nav>
+      <div class="mobileMenuTip" id="mobileMenuTip"></div>
     </div>
+
+    <script>
+      function menuToggle() {
+        let tip = document.getElementById("mobileMenuTip");
+        let menu = document.getElementById("headerNav");
+        if(!tip.classList.contains("showTip")) {
+          tip.classList.add("showTip");
+          menu.classList.add("showMenu");
+          console.log("showing menu");
+        } else {
+          tip.classList.remove("showTip");
+          menu.classList.remove("showMenu");
+          console.log('hiding menu');
+        }
+      }
+
+      function hideMenu() {
+        let tip = document.getElementById("mobileMenuTip");
+        let menu = document.getElementById("headerNav"); 
+        if(tip.classList.contains("showTip")) {
+          tip.classList.remove("showTip");
+          menu.classList.remove("showMenu");
+          console.log("hiding menu");
+        }
+      }
+    </script>
     
     <h1 class="head">WE ARE CREATIVES</h1>
     <img class="arrowIcon" src="./images/icon-arrow-down.svg" alt="">
