@@ -85,6 +85,7 @@ header {
 @media(max-width: 750px) {
     header {
         background-image: url("./images/mobile/image-header.jpg");
+        height: 500px;
     }
 
     .navbar {
@@ -144,6 +145,11 @@ header {
 
     .head {
         font-size: 32px;
+    }
+
+    .arrowIcon {
+        width: 30px;
+        margin-top: 30px;
     }
 }
 
