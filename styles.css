@@ -16,9 +16,13 @@ header {
     background-image: url("./images/desktop/image-header.jpg");
     background-size: 100% 100%;
     background-position: cover;
-    height: 100vh;
+    height: 650px;
     display: flex;
     flex-direction: column;
+}
+
+.headerLogo {
+    height: 30px;
 }
 
 .menuIcon {
@@ -42,8 +46,8 @@ header {
 .headerNavLink {
     color: white;
     text-decoration: none;
-    margin-left: 15px;
-    font-size: 14px;
+    margin-left: 30px;
+    font-size: 18px;
 }
 
 .headerNavLink:hover {
@@ -99,6 +103,7 @@ header {
     .headerNavLink {
         color: hsl(210, 4%, 67%);
         font-size: 18px;
+        margin-left: 0px;
     }
 
     #contactLink {
@@ -135,6 +140,8 @@ header {
         position: absolute;
         flex-direction: column;
         background-color: white;
+        justify-content: center;
+        align-items: center;
         padding-top: 25px;
         padding-bottom: 25px;
         height: 200px;
@@ -171,7 +178,7 @@ header {
 .boldText {
     font-size: 44px;
     color:hsl(212, 27%, 19%);
-    font-weight: 900;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 
